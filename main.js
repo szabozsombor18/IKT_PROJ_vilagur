@@ -18,3 +18,4 @@ document.querySelectorAll('.kattintasikon').forEach(icon => {
     }, 50);
   });
 });
+d
