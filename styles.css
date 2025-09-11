@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("ChatGPT\ Image\ 2025.\ szept.\ 5.\ 23_21_29.png") no-repeat center center fixed;
+    background: url("./img/bg.png") no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -41,18 +41,20 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
-    background-color: #0077cc;
+/*     background-color: #0077cc; */
+    border: 1px solid white;
     padding: 10px 15px;
     border-radius: 8px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #005fa3;
+    background-color: white;
+    color: black;
 }
 
 /* MAIN */
-main {
+.main {
     flex: 1;
     margin: 20px 50px;
     padding: 20px;
@@ -66,15 +68,21 @@ main {
     margin-bottom: 15px;
 }
 
-main p {
+.main p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.photo {
-    float: right; /* vagy right */
+.photo-r {
+    float: right;
     width: 300px;
-    margin: 10px; /* távolság a szövegtől */
+    margin: 10px;
+}
+
+.photo-l {
+    float: left;
+    width: 300px;
+    margin: 10px;
 }
 
 /* FOOTER */
@@ -113,17 +121,22 @@ footer table td {
 }
 
 footer a {
-    color: #00aaff;
+    color: grey;
     text-decoration: none;
     transition: 0.3s;
 }
 
 footer a:hover {
-    color: #ffcc00;
+    color: white;
     text-decoration: underline;
 }
 
 /* EXTRA */
+#rs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .rs {
     color: white;
@@ -168,4 +181,33 @@ i:hover {
   100% {
     transform: scale(1);
   }
+}
+
+#c {
+    text-align: center;
+}
+
+.main table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main th {
+      background-color: white;
+    color: black;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.main td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #ffffff;
 }

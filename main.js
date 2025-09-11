@@ -1,11 +1,10 @@
-document.querySelectorAll('.kattintasikon').forEach(icon => {
+document.querySelectorAll('.clickable').forEach(icon => {
   icon.addEventListener('click', function(e) {
     var pe = e.target.parentElement;
     pe.style.height = "300px";
 
     setTimeout(function() {
       var nx = e.target.nextElementSibling;
-      console.log(nx.id);
 
       if (nx.style.display === "none" || nx.style.display === "") {
         nx.style.display = "block";
@@ -15,7 +14,6 @@ document.querySelectorAll('.kattintasikon').forEach(icon => {
         nx.style.display = "none";
         pe.style.height = "150px";
       }
-    }, 50);
+    }, 100);
   });
 });
-d
