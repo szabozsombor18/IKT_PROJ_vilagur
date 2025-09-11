@@ -1,3 +1,171 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+/* ALAP */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("ChatGPT\ Image\ 2025.\ szept.\ 5.\ 23_21_29.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #0077cc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #005fa3;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    margin: 20px 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.main h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.photo {
+    float: right; /* vagy right */
+    width: 300px;
+    margin: 10px; /* távolság a szövegtől */
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 30px 0;
+    gap: 150px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+footer .sources,
+footer .authors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer table {
+    border-collapse: collapse;
+}
+
+footer table th,
+footer table td {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* EXTRA */
+
+.rs {
+    color: white;
+    border: solid white;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    transition: height 0.3s ease;
+}
+
+i{
+  border-radius: 100%;
+  border: 2px solid white;
+  padding: 12.5px;
+  animation: pulse 2s infinite;
+}
+
+.fas {
+  font-size: 17.5px;
+}
+
+i:hover {
+  color: black;
+  background-color: royalblue;
+  border-color: black;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
